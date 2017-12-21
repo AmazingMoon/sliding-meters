@@ -23,10 +23,9 @@ function initMeters() {
       '<div id="' + a + '">' + (scaleValue++) + '</div>' +
       '<input type="hidden" value="' + (scaleValue - 1) + '">' +
       '</li>';
-    item.join();
   }
-
-  $("#liStart").after(item);
+  var meters = '<ul>' + item.join(' ') + '</ul>';
+  $("#scroller").append(meters);
 }
 
 var myScroll;
