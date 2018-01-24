@@ -32,11 +32,8 @@ var myScroll;
 
 function initIscroll() {
   myScroll = new IScroll('#wrapper', {
-    eventPassthrough: true,
     scrollX: true,
-    scrollY: false,
-    preventDefault: false
-
+    scrollY: false
   });
   //监听滚动结束事件
   myScroll.on('scrollEnd', function () {
