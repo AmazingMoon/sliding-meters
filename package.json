@@ -1,7 +1,6 @@
 {
     "name": "sliding-meters",
     "version": "0.1.0",
-    "private": true,
     "main": "dist/sliding-meters.umd.min.js",
     "scripts": {
         "build": "vue-cli-service build --target lib --name sliding-meters src/index.ts"
