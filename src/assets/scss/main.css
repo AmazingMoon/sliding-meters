@@ -96,6 +96,7 @@ strong {
 }
 
 #scroller li {
+    margin: 0;
     width: auto;
     height: 50px;
     background-color: #ffffff;
