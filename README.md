@@ -4,7 +4,7 @@
 
 **效果图如下**
 
-![image](./sliding.gif)
+![image](https://raw.githubusercontent.com/AmazingMoon/sliding-meters/master/sliding.gif)
 
 **技术栈**
 

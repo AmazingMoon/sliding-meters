@@ -1,6 +1,6 @@
 {
     "name": "sliding-meters",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "一个移动端身高选择（滑动尺）开箱即用的 Vue3 小组件",
     "main": "dist/index.esm.js",
     "module": "dist/index.esm.js",
