@@ -130,6 +130,145 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-@import "../assets/scss/main.css";
+<style scoped>
+body {
+    color: #59595b;
+    margin: 0;
+    text-align: center;
+}
+
+.both-sides {
+    background: white;
+    opacity: 0.9;
+    width: 10%;
+    z-index: 5;
+}
+
+.cursor-bg {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    position: absolute;
+}
+
+.caption {
+    width: 100%;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0 9px;
+}
+
+.cursor-bg-center {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.cursor {
+    width: 2px;
+    background: #2fa5dc;
+    z-index: 5;
+}
+
+/*
+【CSS sprite多图拼合图标 —— 等比例缩放】
+原来图标52 * 52，现要改为32 * 32，总的大图是200 *700。
+
+52/32=1.6  200/1.6=125
+
+*/
+.icon4 {
+    background: url("../assets/images/icon.jpg") -84px 0;
+    width: 25px;
+    height: 28px;
+    background-size: 166px auto;
+}
+
+span {
+    font-size: 14px;
+}
+
+strong {
+    margin: 0 5px;
+    font-size: 14px;
+    color: red;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: auto;
+    height: 35px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+#scroller ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#scroller li {
+    margin: 0;
+    width: auto;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.scale {
+    display: flex;
+    flex-direction: row;
+}
+
+.scale-line {
+    width: 1px;
+    height: 25px;
+    background-color: black;
+}
+
+.scale-line-short {
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+
+.scale-space {
+    width: 10px;
+    height: 35px;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
 </style>

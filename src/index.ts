@@ -1,3 +1,4 @@
+//暂时用不到plugin
 import SlidingMeters from "./components/SlidingMeters.vue"
 import { App } from "vue"
 

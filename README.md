@@ -4,13 +4,13 @@
 
 **效果图如下**
 
-![image](/src/assets/images/sliding.gif)
+![image](./sliding.gif)
 
 **技术栈**
 
-- [x] vue-cli
-- [x] better-scroll
-- [x] vue3
+- vue-cli
+- better-scroll
+- vue3
 
 **配置项**
 
